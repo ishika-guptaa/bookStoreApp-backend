@@ -42,6 +42,9 @@ app.use("/api/user", userRoute);
 //     res.sendFile(path.resolve(dirPath,"frontend","dist","index.html"))
 //    })
 // }
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
